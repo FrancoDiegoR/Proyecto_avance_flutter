@@ -188,7 +188,7 @@ class _AlertCard extends StatelessWidget {
                     ),
                     if (incident != null)
                       Text(
-                        [incident!.zoneName, if (value != null) value].join(' · '),
+                        [incident!.zoneName, ?value].join(' · '),
                         style: const TextStyle(color: AppColors.muted),
                       ),
                     const SizedBox(height: 10),
